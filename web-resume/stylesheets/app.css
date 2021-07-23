@@ -1,0 +1,161 @@
+body {
+    font: 300 14px "JetBrains Mono", monospace;
+    color: white;
+    background-color: #333333;
+}
+
+main, header {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px, 20px;
+    padding-top: 120px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.res-header > ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.res-header ul ul {
+    float: left;
+    border-left: 1px solid;
+    margin: 0;
+    padding: 0;
+}
+
+.res-header li li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.res-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.res-header h3 {
+    font-size: 18px;
+}
+
+.res-header > ul > li {
+    flex-grow: 1;
+    width: 33%;
+}
+
+.res-header h4 {
+    float: left;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+a:visited, a:hover {
+    text-decoration: none;
+}
+
+.resume li a {
+    color: #30D5C8;
+}
+
+.underline{
+    position: relative;
+  }
+  
+  .underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background-color: #30D5C8;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .underline:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+
+.res-body {
+    margin-top: 120px;
+}
+
+.res-body h3 {
+      border-bottom: 1px solid;
+      margin-bottom: 25px;
+}
+
+.res-body p {
+    color: #c9c9c9;
+}
+
+.block {
+    margin-bottom: 60px;
+}
+
+.rel-skills img {
+    width: 40px;
+    max-height: 40px;
+    margin-bottom: 10px;
+}
+
+.rel-skills ul li {
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.rel-skills ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.rel-skills ul li:hover {
+    transform: scale(1.1);
+}
+
+.rel-skills p {
+    color: #c9c9c9;
+}
+
+.work-exp p {
+    margin-bottom: 50px;
+}
+
+.work-exp ul li p {
+    border-left: 1px solid;
+    padding-left: 20px;
+}
+
+.work-exp ul {
+    margin: 0;
+    padding: 0;
+}
+
+.work-exp ul li {
+    display: block;
+}
+
+.work-exp h4 {
+    margin-bottom: 10px;
+}
+
+.work-exp h6 {
+    color: #FFA500;
+}
