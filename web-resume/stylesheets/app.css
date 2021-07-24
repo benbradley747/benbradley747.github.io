@@ -96,6 +96,11 @@ a:visited, a:hover {
 
 .res-body p {
     color: #c9c9c9;
+    transition: all .5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.res-body p:hover {
+    color: white;
 }
 
 .block {
@@ -116,6 +121,15 @@ a:visited, a:hover {
     transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+.rel-skills ul li:hover {
+    transform: scale(1.1);
+}
+
+.rel-skills ul li:hover p {
+    color: white;
+}
+
+
 .rel-skills ul {
     display: flex;
     flex-direction: row;
@@ -126,21 +140,19 @@ a:visited, a:hover {
     padding: 0;
 }
 
-.rel-skills ul li:hover {
-    transform: scale(1.1);
-}
-
-.rel-skills p {
-    color: #c9c9c9;
-}
-
 .work-exp p {
     margin-bottom: 50px;
 }
 
 .work-exp ul li p {
-    border-left: 1px solid;
     padding-left: 20px;
+    border-left: 1px solid #888888;
+    transition: all .5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.work-exp ul li p:hover {
+    color: white;
+    border-color: #FFA500;
 }
 
 .work-exp ul {
