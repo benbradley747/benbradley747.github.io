@@ -23,8 +23,37 @@ main, header {
     transition: all .5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+.fa-github {
+    transition: color .5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.fa-github:hover {
+    color: #30D5C8;
+}
+
 ul {
     list-style-type: none;
+}
+
+.edu-content {
+    text-align: center;
+}
+
+.edu-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.edu-content ul li {
+    text-align: center;
+    flex-grow: 1;
+    width: 50%;
+}
+
+.edu-content ul li p {
+    margin-top: 8px;
 }
 
 .res-header > ul {
@@ -203,20 +232,11 @@ a:visited, a:hover {
     margin-bottom: 10px;
 }
 
-.work-exp h6, .projects h6 {
+.work-exp h6, .projects h6, .edu h6, .content-title h6 {
     color: #FFA500;
 }
 
-.content-title h6 {
-    color: #FFA500;
-}
-
-.projects ul {
-    margin: 0;
-    padding: 0;
-}
-
-.projects ul li {
+.projects ul, .projects ul li, .edu ul, .edu ul li {
     margin: 0;
     padding: 0;
 }
