@@ -8,7 +8,19 @@ main, header {
     max-width: 1200px;
     margin: auto;
     padding: 60px, 20px;
-    padding-top: 120px;
+    padding-top: 100px;
+}
+
+.hamburger-btn {
+    float: right;
+}
+
+.bar {
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    transition: all .5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 ul {
@@ -62,6 +74,10 @@ a:visited, a:hover {
     color: #30D5C8;
 }
 
+.projects li a {
+    color: white;
+}
+
 .underline{
     position: relative;
   }
@@ -79,6 +95,29 @@ a:visited, a:hover {
   
   @media (hover: hover) and (pointer: fine) {
     .underline:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+
+  .white-underline{
+    position: relative;
+  }
+  
+  .white-underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .white-underline:hover::before{
       left: 0;
       right: auto;
       width: 100%;
@@ -129,7 +168,6 @@ a:visited, a:hover {
     color: white;
 }
 
-
 .rel-skills ul {
     display: flex;
     flex-direction: row;
@@ -140,17 +178,14 @@ a:visited, a:hover {
     padding: 0;
 }
 
-.work-exp p {
-    margin-bottom: 50px;
-}
-
-.work-exp ul li p {
+.border-p {
     padding-left: 20px;
     border-left: 1px solid white;
     transition: all .5s cubic-bezier(0.25, 1, 0.5, 1);
+    margin-bottom: 50px;
 }
 
-.work-exp ul li p:hover {
+.border-p:hover {
     color: white;
     border-color: #FFA500;
 }
@@ -168,6 +203,20 @@ a:visited, a:hover {
     margin-bottom: 10px;
 }
 
-.work-exp h6 {
+.work-exp h6, .projects h6 {
     color: #FFA500;
+}
+
+.content-title h6 {
+    color: #FFA500;
+}
+
+.projects ul {
+    margin: 0;
+    padding: 0;
+}
+
+.projects ul li {
+    margin: 0;
+    padding: 0;
 }
