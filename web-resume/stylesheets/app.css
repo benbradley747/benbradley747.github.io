@@ -100,7 +100,7 @@ a:visited, a:hover {
 }
 
 .resume li a {
-    color: #30D5C8;
+    color: #FFA500;
 }
 
 .projects li a {
@@ -118,7 +118,7 @@ a:visited, a:hover {
     right: 0;
     width: 0;
     height: 1px;
-    background-color: #30D5C8;
+    background-color: #FFA500;
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   }
   
